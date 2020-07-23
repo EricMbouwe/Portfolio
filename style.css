@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=PT+Sans+Narrow&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  font-family: 'Open sans', sans-serif;
+  font-size: 15px;
+}
+
+main {
+  flex-basis: 40%;
+  height: 100vh;
+  padding: 60px 45px;
+}
+
+.social-links li {
+  margin-right: 5px;
+}
+
+aside {
+  flex-basis: 60%;
+  background-color: green;
+}
