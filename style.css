@@ -9,7 +9,7 @@
 }
 
 .red-sec {
-  background-color: #EF6461;
+  background-color: #e17055;
 }
 
 .black-sec {
@@ -21,7 +21,7 @@
 }
 
 .blue-sec {
-  background-color: #8E7DBE;
+  background-color: #0984e3;
 }
 
 .green-sec {
@@ -52,23 +52,25 @@ main {
 }
 
 .social-links img {
-  filter: grayscale(100%) drop-shadow(16px 16px 20px blue);
+  filter: grayscale(100%) drop-shadow(16px 16px 20px #1073be);
+  opacity: 0.5;
 }
 
 .social-links img:hover {
-  filter: drop-shadow(16px 16px 20px blue);
+  opacity: 1;
+  filter: drop-shadow(16px 16px 20px #1073be);
 }
 
 .hello-btn:hover {
   color: #fff;
-  background-color: #2aa79c;
+  background-color: #1073be;
   text-decoration: none;
 }
 
 .hello-btn {
   padding: 12px 70px;
   margin-top: 4rem;
-  background-color: #5B5F97;
+  background-color: #0984e3;
   border-radius: 50px;
   color: #fff;
   width: 13.5rem;
@@ -80,7 +82,7 @@ aside {
 }
 
 section {
-  padding: 70px 45px;
+  padding: 60px 45px;
 }
 
 .order {
@@ -89,10 +91,12 @@ section {
 
 .project-mobile {
   height: auto;
+  color: #FAFAFA;
 }
 
 .project-mac {
   height: auto;
+  color: #FAFAFA;
 }
 
 .project-mobile .image,
@@ -121,6 +125,10 @@ section {
 
   .hello-btn {
     margin-top: 60px;
+  }
+
+  section {
+    padding: 70px 45px;
   }
 
   .project-mobile .image img {
