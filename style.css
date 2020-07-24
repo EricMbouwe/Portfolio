@@ -37,7 +37,7 @@ main {
 }
 
 .social-links img:hover {
-  filter: none;
+  filter: drop-shadow(16px 16px 20px blue);
 }
 
 .hello-btn:hover {
@@ -49,10 +49,10 @@ main {
 .hello-btn {
   padding: 12px 70px;
   margin-top: 3rem;
-  background-color: #65b6af;
+  background-color: #305252;
   border-radius: 50px;
   color: #fff;
-  width: max-content;
+  width: fit-content;
 }
 
 aside {
@@ -60,10 +60,37 @@ aside {
   background-color: #E8E9EB;
 }
 
+section {
+  height: 100vh;
+  padding: 60px 45px 75px 45px;
+}
+
+.red-sec {
+  background-color: #EF6461;
+}
+
+.black-sec {
+  background-color: #313638;
+}
+
+.grey-sec {
+  background-color: #E0DFD5;
+}
+
+.blue-sec {
+  background-color: #8E7DBE;
+}
+
+.green-sec {
+  background-color: #99C1B9;
+}
+
 @media screen and (min-width: 768px) {
   main {
     padding: 0 85px;
     height: 100vh;
+    position: sticky;
+    top: 0;
   }
 
   .hello-btn {
