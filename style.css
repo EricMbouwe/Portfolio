@@ -8,9 +8,29 @@
   list-style-type: none;
 }
 
+.red-sec {
+  background-color: #EF6461;
+}
+
+.black-sec {
+  background-color: #313638;
+}
+
+.grey-sec {
+  background-color: #E0DFD5;
+}
+
+.blue-sec {
+  background-color: #8E7DBE;
+}
+
+.green-sec {
+  background-color: #99C1B9;
+}
+
 body {
   font-family: 'Open sans', sans-serif;
-  color: #313638;
+  color: #3A3238;
   /* color: #3b2143; */
 }
 
@@ -49,7 +69,7 @@ main {
 .hello-btn {
   padding: 12px 70px;
   margin-top: 3rem;
-  background-color: #305252;
+  background-color: #5B5F97;
   border-radius: 50px;
   color: #fff;
   width: fit-content;
@@ -61,28 +81,29 @@ aside {
 }
 
 section {
+  padding: 60px 45px;
+}
+
+.project-mobile {
   height: 100vh;
-  padding: 60px 45px 75px 45px;
 }
 
-.red-sec {
-  background-color: #EF6461;
+.project-mac {
+  height: 80vh;
 }
 
-.black-sec {
-  background-color: #313638;
+.project-mobile .image,
+.project-mac .image {
+  flex: 1;
 }
 
-.grey-sec {
-  background-color: #E0DFD5;
+.project-mobile .image img {
+  height: 30rem;
 }
 
-.blue-sec {
-  background-color: #8E7DBE;
-}
-
-.green-sec {
-  background-color: #99C1B9;
+.project-mobile .project-desc,
+.project-mac .desc  {
+  flex: 1;
 }
 
 @media screen and (min-width: 768px) {
