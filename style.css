@@ -16,7 +16,7 @@ body {
 
 main {
   flex-basis: 40%;
-  padding: 60px 45px 60px 45px;
+  padding: 60px 45px 75px 45px;
   background-color: #FAFAFA;
 }
 
@@ -33,7 +33,7 @@ main {
 }
 
 .social-links img {
-  filter: grayscale(100%);
+  filter: grayscale(90%) drop-shadow(16px 16px 20px blue);
 }
 
 .social-links img:hover {
@@ -52,7 +52,7 @@ main {
   background-color: #65b6af;
   border-radius: 50px;
   color: #fff;
-  width: fit-content;
+  width: max-content;
 }
 
 aside {
