@@ -16,8 +16,7 @@ body {
 
 main {
   flex-basis: 40%;
-  height: 100vh;
-  padding: 60px 45px;
+  padding: 60px 45px 80px 45px;
   background-color: #FAFAFA;
 }
 
@@ -26,20 +25,19 @@ main {
 }
 
 .description {
-  margin: 40px 0;
+  margin: 2.2rem 0;
 }
 
 .social-links li {
-  margin-right: 15px;
+  margin-right: 1rem;
 }
 
 .social-links img {
   filter: grayscale(100%);
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 .social-links img:hover {
-  opacity: 1;
   filter: none;
 }
 
@@ -51,8 +49,8 @@ main {
 
 .hello-btn {
   padding: 12px 70px;
-  margin-top: 50px;
-  background-color: #3cbbb1;
+  margin-top: 3rem;
+  background-color: #65b6af;
   border-radius: 50px;
   color: #fff;
   width: fit-content;
@@ -66,6 +64,7 @@ aside {
 @media screen and (min-width: 768px) {
   main {
     padding: 0 85px;
+    height: 100vh;
   }
 
   .hello-btn {
