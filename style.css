@@ -72,6 +72,7 @@ main {
   background-color: #5B5F97;
   border-radius: 50px;
   color: #fff;
+  width: 13.5rem;
 }
 
 aside {
@@ -88,11 +89,11 @@ section {
 }
 
 .project-mobile {
-  height: 100vh;
+  height: auto;
 }
 
 .project-mac {
-  height: 80vh;
+  height: auto;
 }
 
 .project-mobile .image,
