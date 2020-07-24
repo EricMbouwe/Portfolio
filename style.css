@@ -31,12 +31,11 @@
 body {
   font-family: 'Open sans', sans-serif;
   color: #3A3238;
-  /* color: #3b2143; */
 }
 
 main {
   flex-basis: 40%;
-  padding: 60px 45px 75px 45px;
+  padding: 60px 45px 80px 45px;
   background-color: #FAFAFA;
 }
 
@@ -68,7 +67,7 @@ main {
 
 .hello-btn {
   padding: 12px 70px;
-  margin-top: 3rem;
+  margin-top: 4rem;
   background-color: #5B5F97;
   border-radius: 50px;
   color: #fff;
@@ -81,11 +80,11 @@ aside {
 }
 
 section {
-  padding: 60px 45px;
+  padding: 70px 45px;
 }
 
 .order {
-  margin: 2rem 0;
+  margin-bottom: 2rem;
 }
 
 .project-mobile {
@@ -102,7 +101,9 @@ section {
 }
 
 .project-mobile .image img {
-  height: 30rem;
+  width: 50%;
+  height: auto;
+  align-self: center;
 }
 
 .project-mobile .project-desc,
@@ -120,5 +121,10 @@ section {
 
   .hello-btn {
     margin-top: 60px;
+  }
+
+  .project-mobile .image img {
+    width: auto;
+    height: 30rem;
   }
 }
