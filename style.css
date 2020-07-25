@@ -97,12 +97,10 @@ section {
 }
 
 .project-mobile {
-  height: auto;
   color: #FAFAFA;
 }
 
 .project-mac {
-  height: auto;
   color: #FAFAFA;
 }
 
@@ -142,3 +140,9 @@ section {
     width: 70%;
   }
 }
+
+@media screen and (min-width: 1366px) {
+  .project-mobile {
+    height: 100vh;
+  }
+} 
