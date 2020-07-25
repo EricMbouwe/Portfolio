@@ -44,10 +44,6 @@ main {
   background-color: #FAFAFA;
 }
 
-.title {
-  letter-spacing: 0px;
-}
-
 .description {
   margin: 2.2rem 0;
   font-size: 14px;
@@ -89,7 +85,7 @@ aside {
 }
 
 section {
-  padding: 60px 45px;
+  padding: 2rem;
 }
 
 .order {
@@ -109,23 +105,26 @@ section {
   flex: 1;
   display: flex;
   flex-direction: column;
-  border: 1px solid;
+  /* border: 1px solid; */
 }
 
 .project-mobile .image img,
 .project-mac .image img {
   align-self: center;
-  border: 1px solid;
+  /* border: 1px solid; */
+  /* transform: scale3d(1.05, 1.05, 1.9); */
+  transform: scale(1.3);
 }
 
 .project-mobile .image img {
   max-width: 50%;
+  transform: scale(1.1)
 }
 
 .project-mobile .project-desc,
 .project-mac .project-desc  {
   flex: 1;
-  border: 1px solid;
+  /* border: 1px solid; */
 }
 
 @media screen and (min-width: 768px) {
@@ -140,8 +139,12 @@ section {
     margin-top: 2.8rem;
   }
 
-  section {
-    padding: 70px 45px;
+  .project-mac {
+    padding: 5rem;
+  }
+
+  .project-mobile {
+    padding: 0 2rem;
   }
 
   .project-mobile .image img,
