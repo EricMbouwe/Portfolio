@@ -21,12 +21,16 @@
 }
 
 .blue-sec {
-  /* background-color: #0984e3; */
-  background-color: #3498db;
+  background-color: #0984e3;
+  /* background-color: #3498db; */
 }
 
 .green-sec {
   background-color: #99C1B9;
+}
+
+.keyword {
+  color: #1073be;
 }
 
 body {
@@ -41,11 +45,13 @@ main {
 }
 
 .title {
-  letter-spacing: 1px;
+  letter-spacing: 0px;
 }
 
 .description {
   margin: 2.2rem 0;
+  font-size: 14px;
+  letter-spacing: 1px;
 }
 
 .social-links li {
@@ -53,8 +59,8 @@ main {
 }
 
 .social-links img {
-  filter: grayscale(100%) drop-shadow(16px 16px 20px #1073be);
-  opacity: 0.5;
+  filter: grayscale(100%);
+  opacity: 0.6;
 }
 
 .social-links img:hover {
@@ -118,14 +124,14 @@ section {
 
 @media screen and (min-width: 768px) {
   main {
-    padding: 0 85px;
-    height: 100vh;
+    padding: 50px 85px;
+    height: fit-content;
     position: sticky;
     top: 0;
   }
 
   .hello-btn {
-    margin-top: 60px;
+    margin-top: 45px;
   }
 
   section {
