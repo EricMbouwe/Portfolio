@@ -107,17 +107,25 @@ section {
 .project-mobile .image,
 .project-mac .image {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid;
+}
+
+.project-mobile .image img,
+.project-mac .image img {
+  align-self: center;
+  border: 1px solid;
 }
 
 .project-mobile .image img {
-  width: 50%;
-  height: auto;
-  align-self: center;
+  max-width: 50%;
 }
 
 .project-mobile .project-desc,
-.project-mac .desc  {
+.project-mac .project-desc  {
   flex: 1;
+  border: 1px solid;
 }
 
 @media screen and (min-width: 768px) {
@@ -136,8 +144,13 @@ section {
     padding: 70px 45px;
   }
 
+  .project-mobile .image img,
+  .project-mac .image img {
+    align-self: flex-end;
+  }
+
   .project-mobile .image img {
-    width: 70%;
+    max-width: 70%;
   }
 }
 
