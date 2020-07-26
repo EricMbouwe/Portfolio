@@ -77,7 +77,7 @@ main {
 }
 
 .hello-btn {
-  padding: 12px 70px;
+  padding: 0.5rem 2rem;
   margin-top: 2.5rem;
   background-color: #0984e3;
   border-radius: 50px;
@@ -169,14 +169,14 @@ section {
 
 @media screen and (min-width: 768px) {
   main {
-    padding: 50px 85px;
+    padding: 3rem 2rem;
     height: 100vh;
     position: sticky;
     top: 0;
   }
 
   section {
-    padding: 5rem;
+    padding: 2.5rem 1rem;
   }
 
   .project-mobile .image img,
@@ -186,6 +186,16 @@ section {
 
   .project-mobile .image img {
     max-width: 70%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    padding: 3rem 6rem;
+  }
+
+  section {
+    padding: 5rem;
   }
 }
 
