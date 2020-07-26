@@ -83,7 +83,7 @@ main {
 }
 
 .hello-btn {
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 2.2rem;
   margin-top: 2.5rem;
   background-color: #0984e3;
   border-radius: 50px;
@@ -97,7 +97,7 @@ aside {
 }
 
 section {
-  padding: 2rem;
+  padding: 2.5rem 2rem;
 }
 
 .order {
