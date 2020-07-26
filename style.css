@@ -176,9 +176,6 @@ section {
 @media screen and (min-width: 768px) {
   main {
     padding: 3rem 2rem;
-    height: 100vh;
-    position: sticky;
-    top: 0;
   }
 
   section {
@@ -198,6 +195,9 @@ section {
 @media screen and (min-width: 1024px) {
   main {
     padding: 3rem 6rem;
+    height: 100vh;
+    position: sticky;
+    top: 0;
   }
 
   section {
