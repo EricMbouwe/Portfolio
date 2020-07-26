@@ -48,6 +48,7 @@ main {
 
 .title {
   font-family: 'Rowdies', cursive;
+  letter-spacing: -2px;
 }
 
 .description {
@@ -175,11 +176,11 @@ section {
 
 @media screen and (min-width: 768px) {
   main {
-    padding: 3rem 2rem;
+    padding: 3rem 4rem;
   }
 
   section {
-    padding: 2.5rem 1rem;
+    padding: 2.5rem 2rem;
   }
 
   .project-mobile .image img,
@@ -194,7 +195,7 @@ section {
 
 @media screen and (min-width: 1024px) {
   main {
-    padding: 3rem 6rem;
+    padding: 3rem 5rem;
     height: 100vh;
     position: sticky;
     top: 0;
