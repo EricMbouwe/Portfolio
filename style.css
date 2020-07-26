@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap');
 
 * {
   margin: 0;
@@ -43,6 +44,10 @@ main {
   flex-basis: 40%;
   padding: 60px 45px 80px 45px;
   background-color: #FAFAFA;
+}
+
+.title {
+  font-family: 'Rowdies', cursive;
 }
 
 .description {
@@ -130,6 +135,7 @@ section {
 .project-name {
   text-transform: uppercase;
   font-weight: bold;
+  padding-bottom: 0.3rem;
 }
 
 .project-desc p {
