@@ -159,14 +159,14 @@ section {
 }
 
 .articles a:hover {
-  color: #0984e3;
+  color: #7d77bd;
   text-decoration: none;
 }
 
 .articles a {
   font-size: 14px;
   font-weight: 600;
-  color: #130f40;
+  color: #0984e3;
 }
 
 .articles hr {
