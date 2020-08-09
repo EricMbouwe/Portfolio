@@ -22,8 +22,6 @@
 }
 
 .blue-sec {
-  /* background-color: #0984e3; */
-  /* background-color: #3498db; */
   background-color: #130f40;
 }
 
@@ -171,6 +169,58 @@ section {
 
 .articles hr {
   border-style: dashed;
+}
+
+
+/* Form */
+.form-group {
+  position: relative;
+  margin-bottom: 0;
+}
+
+.form-control:focus {
+  outline: none !important;
+}
+
+.form-group.success .form-control{
+  border-color: #2ecc71;
+}
+
+.form-group.error .form-control {
+  border-color: #e74c3c;
+}
+
+.form-group i {
+  visibility: hidden;
+  position: absolute;
+  top: 11px;
+  right: 12px;
+}
+
+.form-group.success i.fa-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+
+.form-group.error i.fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.form-group small {
+  color: #e74c3c;
+  display: inline-block;
+  margin-bottom: 8px;
+  visibility: hidden;
+}
+
+.form-group.error small {
+  visibility: visible;
+}
+
+.form button:focus {
+  outline: none;
+  background-color: #2c3e50;
 }
 
 
