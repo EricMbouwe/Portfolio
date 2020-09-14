@@ -95,7 +95,9 @@ const sendInfos = () => {
                      message : commentValue
   }
   
-  followers.push(follower);
+  if(follower['name'] != ' ' && follower['email'] != ' ' && follower['message'] != ' ') {
+    followers.push(follower);
+  }
 };
 
 const resetForm = () => {
