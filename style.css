@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap");
 
 * {
   margin: 0;
@@ -26,7 +26,7 @@
 }
 
 .green-sec {
-  background-color: #99C1B9;
+  background-color: #99c1b9;
 }
 
 .gold-sec {
@@ -42,18 +42,19 @@
 }
 
 body {
-  font-family: 'Open sans', sans-serif;
+  font-family: "Open sans", sans-serif;
   color: #535c68;
+  max-width: 1350px;
 }
 
 main {
   flex-basis: 40%;
   padding: 60px 45px 80px 45px;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
 }
 
 .title {
-  font-family: 'Rowdies', cursive;
+  font-family: "Rowdies", cursive;
   letter-spacing: -2px;
 }
 
@@ -92,14 +93,14 @@ main {
   padding: 0.5rem 2.2rem;
   margin-top: 2.5rem;
   background-color: #0984e3;
-  border-radius: 50px;
+  border-radius: 5px;
   color: #fff;
   width: fit-content;
 }
 
 aside {
   flex-basis: 60%;
-  background-color: #E8E9EB;
+  background-color: #e8e9eb;
 }
 
 section {
@@ -111,15 +112,18 @@ section {
 }
 
 .project-mobile {
-  color: #FAFAFA;
+  color: #fafafa;
+  width: 100%;
 }
 
 .project-mac {
-  color: #FAFAFA;
+  color: #fafafa;
+  width: 100%;
 }
 
 .project-mobile .image,
 .project-mac .image {
+  width: 100%;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -131,11 +135,11 @@ section {
 }
 
 .project-mobile .image img {
-  max-width: 50%;
+  width: 65%;
 }
 
 .project-mobile .project-desc,
-.project-mac .project-desc  {
+.project-mac .project-desc {
   flex: 1;
 }
 
@@ -179,7 +183,6 @@ section {
   border-style: dashed;
 }
 
-
 /* Form */
 .form-group {
   position: relative;
@@ -187,10 +190,14 @@ section {
 }
 
 .form-control:focus {
-  outline: none !important;
+  background-color: #f1f2f6;
+  border-color: #74b9ff;
+  box-shadow: 0px 0px 12px 0px rgba(116, 185, 255, 0.7);
+  -webkit-box-shadow: 0px 0px 12px 0px rgba(116, 185, 255, 0.7);
+  -moz-box-shadow: 0px 0px 12px 0px rgba(116, 185, 255, 0.7);
 }
 
-.form-group.success .form-control{
+.form-group.success .form-control {
   border-color: #2ecc71;
 }
 
@@ -231,7 +238,6 @@ section {
   background-color: #2c3e50;
 }
 
-
 @media screen and (min-width: 768px) {
   main {
     padding: 3rem 4rem;
@@ -244,10 +250,6 @@ section {
   .project-mobile .image img,
   .project-mac .image img {
     align-self: flex-end;
-  }
-
-  .project-mobile .image img {
-    max-width: 70%;
   }
 }
 
@@ -268,4 +270,4 @@ section {
   .project-mobile {
     height: 100vh;
   }
-} 
+}
