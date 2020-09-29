@@ -10,7 +10,7 @@ form.addEventListener("submit", (e) => {
 
   checkInputs();
   sendInfos();
-  resetForm(); 
+  resetForm();
 });
 
 function checkInputs() {
@@ -43,8 +43,8 @@ name.onkeyup = () => {
   const nameVal = name.value.trim();
   if (nameVal !== '') {
     setSuccessFor(name);
-  }else {
-  setErrorFor(name, 'Enter your name please');
+  } else {
+    setErrorFor(name, 'Enter your name please');
   }
 }
 
@@ -65,7 +65,7 @@ comment.onkeyup = () => {
     setErrorFor(comment, "Say Hello!!");
   }
 };
-  
+
 
 function setErrorFor(input, message) {
   const formControl = input.parentElement;
@@ -90,12 +90,14 @@ const sendInfos = () => {
   const emailValue = email.value.trim();
   const commentValue = comment.value.trim();
 
-  const follower = { name : nameValue,
-                     email : emailValue,
-                     message : commentValue
-  }
-  
-  if(follower['name'] != ' ' && follower['email'] != ' ' && follower['message'] != ' ') {
+  const follower =
+    {
+      name: nameValue,
+      email: emailValue,
+      message: commentValue
+    }
+
+  if (follower['name'] != ' ' && follower['email'] != ' ' && follower['message'] != ' ') {
     followers.push(follower);
   }
 };
