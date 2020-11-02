@@ -44,7 +44,11 @@ name.onkeyup = () => {
   if (nameVal !== "") {
     setSuccessFor(name);
   } else {
+<<<<<<< HEAD
     setErrorFor(name, "Enter your name please");
+=======
+    setErrorFor(name, 'Enter your name please');
+>>>>>>> 3cd1e17064d0ff3a3dc43f5b11b5f297c3b984f8
   }
 };
 
@@ -65,6 +69,10 @@ comment.onkeyup = () => {
     setErrorFor(comment, "Say Hello!!");
   }
 };
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3cd1e17064d0ff3a3dc43f5b11b5f297c3b984f8
 
 function setErrorFor(input, message) {
   const formControl = input.parentElement;
@@ -89,6 +97,7 @@ const sendInfos = () => {
   const emailValue = email.value.trim();
   const commentValue = comment.value.trim();
 
+<<<<<<< HEAD
   const follower = {
     name: nameValue,
     email: emailValue,
@@ -100,6 +109,16 @@ const sendInfos = () => {
     follower["email"] != " " &&
     follower["message"] != " "
   ) {
+=======
+  const follower =
+    {
+      name: nameValue,
+      email: emailValue,
+      message: commentValue
+    }
+
+  if (follower['name'] != ' ' && follower['email'] != ' ' && follower['message'] != ' ') {
+>>>>>>> 3cd1e17064d0ff3a3dc43f5b11b5f297c3b984f8
     followers.push(follower);
   }
 };

@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap");
 
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -44,7 +46,8 @@
 body {
   font-family: "Open sans", sans-serif;
   color: #535c68;
-  max-width: 1350px;
+  max-width: 1800px;
+  margin: auto;
 }
 
 main {
@@ -204,9 +207,9 @@ section {
   border-color: #2ecc71;
 }
 
-.form-group.error .form-control {
+/* .form-group.error .form-control {
   border-color: #e74c3c;
-}
+} */
 
 .form-group i {
   visibility: hidden;
@@ -266,6 +269,14 @@ section {
 
   section {
     padding: 5rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
