@@ -54,6 +54,7 @@ main {
   flex-basis: 40%;
   padding: 60px 45px 80px 45px;
   background-color: #fafafa;
+
   /* background-image: url(./assets/images/profile_pic.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -199,9 +200,9 @@ section {
 .form-control:focus {
   background-color: #f1f2f6;
   border-color: #74b9ff;
-  box-shadow: 0px 0px 15px 2px rgba(116, 185, 255, 0.7);
-  -webkit-box-shadow: 0px 0px 15px 2px rgba(116, 185, 255, 0.7);
-  -moz-box-shadow: 0px 0px 15px 2px rgba(116, 185, 255, 0.7);
+  box-shadow: 0 0 15px 2px rgba(116, 185, 255, 0.7);
+  -webkit-box-shadow: 0 0 15px 2px rgba(116, 185, 255, 0.7);
+  -moz-box-shadow: 0 0 15px 2px rgba(116, 185, 255, 0.7);
 }
 
 .form-group.success .form-control {

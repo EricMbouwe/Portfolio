@@ -1,11 +1,11 @@
-const form = document.getElementById("form");
-const name = document.getElementById("name");
-const email = document.getElementById("email");
-const comment = document.getElementById("comment");
+const form = document.getElementById('form');
+const name = document.getElementById('name');
+const email = document.getElementById('email');
+const comment = document.getElementById('comment');
 
-let followers = [];
+const followers = [];
 
-form.addEventListener("submit", (e) => {
+form.addEventListener('submit', (e) => {
   e.preventDefault();
 
   checkInputs();
@@ -18,21 +18,21 @@ function checkInputs() {
   const emailValue = email.value.trim();
   const commentValue = comment.value.trim();
 
-  if (nameValue === "") {
+  if (nameValue === '') {
     setErrorFor(name, "Name can't be blank");
   } else {
     setSuccessFor(name);
   }
 
-  if (emailValue === "") {
+  if (emailValue === '') {
     setErrorFor(email, "Email can't be blank");
   } else if (!isEmail(emailValue)) {
-    setErrorFor(email, "Not a valid email");
+    setErrorFor(email, 'Not a valid email');
   } else {
     setSuccessFor(email);
   }
 
-  if (commentValue === "") {
+  if (commentValue === '') {
     setErrorFor(comment, "Message can't be blank");
   } else {
     setSuccessFor(comment);
@@ -41,14 +41,10 @@ function checkInputs() {
 
 name.onkeyup = () => {
   const nameVal = name.value.trim();
-  if (nameVal !== "") {
+  if (nameVal !== '') {
     setSuccessFor(name);
   } else {
-<<<<<<< HEAD
-    setErrorFor(name, "Enter your name please");
-=======
     setErrorFor(name, 'Enter your name please');
->>>>>>> 3cd1e17064d0ff3a3dc43f5b11b5f297c3b984f8
   }
 };
 
@@ -57,38 +53,34 @@ email.onkeyup = () => {
   if (isEmail(emailVal)) {
     setSuccessFor(email);
   } else {
-    setErrorFor(email, "Your email is not valid");
+    setErrorFor(email, 'Your email is not valid');
   }
 };
 
 comment.onkeyup = () => {
   const commentVal = comment.value.trim();
-  if (commentVal !== "") {
+  if (commentVal !== '') {
     setSuccessFor(comment);
   } else {
-    setErrorFor(comment, "Say Hello!!");
+    setErrorFor(comment, 'Say Hello!!');
   }
 };
-<<<<<<< HEAD
-=======
-
->>>>>>> 3cd1e17064d0ff3a3dc43f5b11b5f297c3b984f8
 
 function setErrorFor(input, message) {
   const formControl = input.parentElement;
-  const small = formControl.querySelector("small");
-  formControl.className = "form-group error";
+  const small = formControl.querySelector('small');
+  formControl.className = 'form-group error';
   small.innerText = message;
 }
 
 function setSuccessFor(input) {
   const formControl = input.parentElement;
-  formControl.className = "form-group success";
+  formControl.className = 'form-group success';
 }
 
 function isEmail(email) {
   return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
-    email
+    email,
   );
 }
 
@@ -97,7 +89,6 @@ const sendInfos = () => {
   const emailValue = email.value.trim();
   const commentValue = comment.value.trim();
 
-<<<<<<< HEAD
   const follower = {
     name: nameValue,
     email: emailValue,
@@ -105,26 +96,16 @@ const sendInfos = () => {
   };
 
   if (
-    follower["name"] != " " &&
-    follower["email"] != " " &&
-    follower["message"] != " "
+    follower.name != ' '
+    && follower.email != ' '
+    && follower.message != ' '
   ) {
-=======
-  const follower =
-    {
-      name: nameValue,
-      email: emailValue,
-      message: commentValue
-    }
-
-  if (follower['name'] != ' ' && follower['email'] != ' ' && follower['message'] != ' ') {
->>>>>>> 3cd1e17064d0ff3a3dc43f5b11b5f297c3b984f8
     followers.push(follower);
   }
 };
 
 const resetForm = () => {
-  name.value = "";
-  email.value = "";
-  comment.value = "";
+  name.value = '';
+  email.value = '';
+  comment.value = '';
 };
