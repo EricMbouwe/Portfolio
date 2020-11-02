@@ -5,13 +5,49 @@ const comment = document.getElementById('comment');
 
 const followers = [];
 
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
+function setErrorFor(input, message) {
+  const formControl = input.parentElement;
+  const small = formControl.querySelector('small');
+  formControl.className = 'form-group error';
+  small.innerText = message;
+}
 
-  checkInputs();
-  sendInfos();
-  resetForm();
-});
+function setSuccessFor(input) {
+  const formControl = input.parentElement;
+  formControl.className = 'form-group success';
+}
+
+function isEmail(email) {
+  return /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
+    email,
+  );
+}
+
+const sendInfos = () => {
+  const nameValue = name.value.trim();
+  const emailValue = email.value.trim();
+  const commentValue = comment.value.trim();
+
+  const follower = {
+    name: nameValue,
+    email: emailValue,
+    message: commentValue,
+  };
+
+  if (
+    follower.name !== ' '
+    && follower.email !== ' '
+    && follower.message !== ' '
+  ) {
+    followers.push(follower);
+  }
+};
+
+const resetForm = () => {
+  name.value = '';
+  email.value = '';
+  comment.value = '';
+};
 
 function checkInputs() {
   const nameValue = name.value.trim();
@@ -66,46 +102,10 @@ comment.onkeyup = () => {
   }
 };
 
-function setErrorFor(input, message) {
-  const formControl = input.parentElement;
-  const small = formControl.querySelector('small');
-  formControl.className = 'form-group error';
-  small.innerText = message;
-}
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
 
-function setSuccessFor(input) {
-  const formControl = input.parentElement;
-  formControl.className = 'form-group success';
-}
-
-function isEmail(email) {
-  return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
-    email,
-  );
-}
-
-const sendInfos = () => {
-  const nameValue = name.value.trim();
-  const emailValue = email.value.trim();
-  const commentValue = comment.value.trim();
-
-  const follower = {
-    name: nameValue,
-    email: emailValue,
-    message: commentValue,
-  };
-
-  if (
-    follower.name != ' '
-    && follower.email != ' '
-    && follower.message != ' '
-  ) {
-    followers.push(follower);
-  }
-};
-
-const resetForm = () => {
-  name.value = '';
-  email.value = '';
-  comment.value = '';
-};
+  checkInputs();
+  sendInfos();
+  resetForm();
+});
