@@ -82,8 +82,14 @@ main {
   align-self: center;
 }
 
-.social-links a:hover {
-  opacity: 1;
+.articles a {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0984e3;
+}
+
+.project-links a {
+  color: #ecf0f1;
 }
 
 .social-links a {
@@ -91,10 +97,8 @@ main {
   opacity: 0.6;
 }
 
-.hello-btn:hover {
-  color: #fff;
-  background-color: #1073be;
-  text-decoration: none;
+.social-links a:hover {
+  opacity: 1;
 }
 
 .hello-btn {
@@ -103,7 +107,14 @@ main {
   background-color: #0984e3;
   border-radius: 5px;
   color: #fff;
-  width: fit-content;
+  text-align: center;
+  width: max-content;
+}
+
+.hello-btn:hover {
+  color: #fff;
+  background-color: #1073be;
+  text-decoration: none;
 }
 
 aside {
@@ -172,19 +183,9 @@ section {
   color: #ecf0f1;
 }
 
-.project-links a {
-  color: #ecf0f1;
-}
-
 .articles a:hover {
   color: #7d77bd;
   text-decoration: none;
-}
-
-.articles a {
-  font-size: 14px;
-  font-weight: 600;
-  color: #0984e3;
 }
 
 .articles hr {
