@@ -10,7 +10,7 @@ form.addEventListener("submit", (e) => {
 
   checkInputs();
   sendInfos();
-  resetForm(); 
+  resetForm();
 });
 
 function checkInputs() {
@@ -41,12 +41,12 @@ function checkInputs() {
 
 name.onkeyup = () => {
   const nameVal = name.value.trim();
-  if (nameVal !== '') {
+  if (nameVal !== "") {
     setSuccessFor(name);
-  }else {
-  setErrorFor(name, 'Enter your name please');
+  } else {
+    setErrorFor(name, "Enter your name please");
   }
-}
+};
 
 email.onkeyup = () => {
   const emailVal = email.value.trim();
@@ -59,13 +59,12 @@ email.onkeyup = () => {
 
 comment.onkeyup = () => {
   const commentVal = comment.value.trim();
-  if (commentVal !== '') {
+  if (commentVal !== "") {
     setSuccessFor(comment);
   } else {
     setErrorFor(comment, "Say Hello!!");
   }
 };
-  
 
 function setErrorFor(input, message) {
   const formControl = input.parentElement;
@@ -90,18 +89,23 @@ const sendInfos = () => {
   const emailValue = email.value.trim();
   const commentValue = comment.value.trim();
 
-  const follower = { name : nameValue,
-                     email : emailValue,
-                     message : commentValue
-  }
-  
-  if(follower['name'] != ' ' && follower['email'] != ' ' && follower['message'] != ' ') {
+  const follower = {
+    name: nameValue,
+    email: emailValue,
+    message: commentValue,
+  };
+
+  if (
+    follower["name"] != " " &&
+    follower["email"] != " " &&
+    follower["message"] != " "
+  ) {
     followers.push(follower);
   }
 };
 
 const resetForm = () => {
-  name.value = '';
-  email.value = '';
-  comment.value = '';
-}
+  name.value = "";
+  email.value = "";
+  comment.value = "";
+};
