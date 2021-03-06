@@ -55,13 +55,16 @@ main {
   flex-basis: 40%;
   padding: 60px 45px 80px 45px;
   background-color: #fafafa;
+  z-index: 1;
 }
 
 main::before {
   content: '';
   position: absolute;
-  width: 100%;
-  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-image: url(./assets/images/profile_pic.jpg);
   background-repeat: no-repeat;
   background-position: center;
