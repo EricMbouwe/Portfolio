@@ -18,6 +18,7 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
   <link rel="stylesheet" href="style.css" />
   <title>Portfolio</title>
 </head>
@@ -51,8 +52,8 @@
             <a href="https://twitter.com/EricMbouwe" target="blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
           </li>
           <li class="file">
-            <a href="assets/images/RESUME-ERIC-EN.pdf" data-toggle="tooltip" data-placement="top" title="Download resume"
-              download><i class="fa fa-file-text" aria-hidden="true"></i></a>
+            <a href="assets/images/RESUME-ERIC-EN.pdf" data-toggle="tooltip" data-placement="top"
+              title="Download resume" download><i class="fa fa-file-text" aria-hidden="true"></i></a>
           </li>
         </ul>
       </div>
@@ -182,33 +183,39 @@
     </section>
 
     <footer>
-      <div id="contact" class="p-4 p-md-5">
+      <div id="contact" class="form__wrapper p-4 p-md-5">
         <h4 class="font-weight-bold mb-4">GET IN TOUCH</h4>
 
         <form name="contact" method="POST" data-netlify="true" class="form mb-2" id="form">
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Name" id="name" aria-describedby="namelHelp">
+            <input type="text" class="form-control" name="name" placeholder="Name" id="name"
+              aria-describedby="namelHelp">
             <i class="fa fa-check-circle"></i>
             <i class="fa fa-exclamation-circle"></i>
-            <small>Error message</small>
+            <small class="error-message">Error message</small>
           </div>
 
           <div class="form-group">
-            <input type="email" class="form-control" placeholder="Email" id="email" aria-describedby="emailHelp">
+            <input type="email" class="form-control" name="email" placeholder="Email" id="email"
+              aria-describedby="emailHelp">
             <i class="fa fa-check-circle"></i>
             <i class="fa fa-exclamation-circle"></i>
-            <small>Error message</small>
+            <small class="error-message">Error message</small>
           </div>
 
           <div class="form-group">
-            <textarea class="form-control" placeholder="Message" id="comment" rows="4"></textarea>
+            <textarea class="form-control" name="message" placeholder="Message" id="comment" rows="4"></textarea>
             <i class="fa fa-check-circle"></i>
             <i class="fa fa-exclamation-circle"></i>
-            <small>Error message</small>
+            <small class="error-message">Error message</small>
           </div>
 
-          <button type="submit" class="hello-btn w-100 border-0 mt-3">Send</button>
+          <button type="submit" class="hello-btn w-100 border-0 mt-3">Send<span id="loader"><i class="fa fa-refresh"
+                aria-hidden="true"></i></span></button>
         </form>
+        <div class="submit-status" id="submitStatus">
+          <p id="submitStatusText"></p>
+        </div>
       </div>
 
       <div class="footer-bottom grey-sec text-white text-center p-3">
