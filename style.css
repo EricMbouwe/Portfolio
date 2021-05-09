@@ -40,7 +40,8 @@
 }
 
 .keyword {
-  color: #1073be;
+  color: #145b90;
+  font-weight: 900;
 }
 
 body {
@@ -97,7 +98,7 @@ main::before {
 .articles a {
   font-size: 14px;
   font-weight: 600;
-  color: #0984e3;
+  color: #145b90;
 }
 
 .project-links a {
@@ -116,7 +117,7 @@ main::before {
 .hello-btn {
   padding: 0.5rem 2.2rem;
   margin-top: 2.5rem;
-  background-color: #0984e3;
+  background-color: #145b90;
   border-radius: 5px;
   color: #fff;
   text-align: center;
