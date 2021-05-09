@@ -55,7 +55,7 @@ main {
   flex-basis: 40%;
   padding: 60px 45px 80px 45px;
   background-color: #fafafa;
-	z-index: 10;
+  z-index: 10;
 }
 
 main::before {
@@ -70,7 +70,7 @@ main::before {
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.1;
-	z-index: -1;
+  z-index: -1;
 }
 
 .title {
@@ -142,12 +142,8 @@ section {
   margin-bottom: 2rem;
 }
 
+.project-mac,
 .project-mobile {
-  color: #fafafa;
-  width: 100%;
-}
-
-.project-mac {
   color: #fafafa;
   width: 100%;
 }
@@ -173,6 +169,7 @@ section {
 .project-mobile .project-desc,
 .project-mac .project-desc {
   flex: 1;
+  padding-top: 2rem;
 }
 
 .project-name {
@@ -266,9 +263,11 @@ section {
   opacity: 0.8;
   margin-left: 0.5rem;
 }
+
 .form__wrapper #loader i {
   animation: spin 2s linear infinite;
 }
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -277,6 +276,7 @@ section {
     transform: rotate(360deg);
   }
 }
+
 .form__wrapper .submit-status {
   display: none;
   border: 1px solid #eee;
@@ -284,12 +284,15 @@ section {
   padding: 0.5rem;
   margin-top: 2rem;
 }
+
 .form__wrapper .submit-status.success {
   border: 2px solid #2ecc71;
 }
+
 .form__wrapper .submit-status.error {
   border: 2px solid red;
 }
+
 .form__wrapper .submit-status #submitStatusText {
   margin: 0;
   font-size: 1rem;
