@@ -58,7 +58,7 @@
         </ul>
       </div>
 
-      <!-- <div id="google_translate_element">change language</div> -->
+      <!-- div id="google_translate_element">change language</-->
 
       <a class="hello-btn d-block" href="mailto:ericmbouwe@gmail.com" target="blank">Get in Touch!</a>
     </div>
@@ -100,7 +100,7 @@
         </p>
 
         <div class="project-links">
-          <a href="https://steph-care.com" class="live" target="blank">Live</a>
+          <a href="https://hulu-clone-ashen-kappa.vercel.app/" class="live" target="blank">Live</a>
           <span>|</span>
           <a href="https://github.com/EricMbouwe/Hulu-clone" class="github" target="blank">Github</a>
         </div>
@@ -175,51 +175,6 @@
       <a href="https://hackernoon.com/css-basics-how-to-take-a-control-gm6k3vxd" class="article_title text-black"
         target="blank">CSS Basics: How To Take A Control</a>
       <hr>
-
-      <form action="https://www.paypal.com/donate" method="post" target="_top">
-        <input type="hidden" name="hosted_button_id" value="PG98WKYWNUXPC" />
-        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit"
-          title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-        <img alt="" border="0" src="https://www.paypal.com/en_CM/i/scr/pixel.gif" width="1" height="1" />
-      </form>
-
-      <div id="smart-button-container" class="mt-5">
-        <div style="text-align: left;">
-          <div id="paypal-button-container"></div>
-        </div>
-      </div>
-      <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=GBP"
-        data-sdk-integration-source="button-factory"></script>
-      <script>
-        function initPayPalButton() {
-          paypal.Buttons({
-            style: {
-              shape: 'rect',
-              color: 'gold',
-              layout: 'vertical',
-              label: 'paypal',
-
-            },
-
-            createOrder: function (data, actions) {
-              return actions.order.create({
-                purchase_units: [{ "description": "Booba&zaza movie", "amount": { "currency_code": "GBP", "value": 45 } }]
-              });
-            },
-
-            onApprove: function (data, actions) {
-              return actions.order.capture().then(function (details) {
-                alert('Transaction completed by ' + details.payer.name.given_name + '!');
-              });
-            },
-
-            onError: function (err) {
-              console.log(err);
-            }
-          }).render('#paypal-button-container');
-        }
-        initPayPalButton();
-      </script>
 
     </section>
 
